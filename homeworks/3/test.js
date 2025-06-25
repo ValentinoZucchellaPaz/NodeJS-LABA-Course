@@ -59,7 +59,9 @@ assertEqual(discounted[0].price, 90, 'Discounted price calculated');
 assertEqual(calculateTotalPrice(products), 300, 'Total price calculated');
 
 // Task 2
+const users = [{ firstName: "Ada", lastName: "Lovelace" }, { firstName: "Valen", lastName: "Tino" }]
 assertEqual(getFullName({ firstName: "Ada", lastName: "Lovelace" }), "Ada Lovelace", 'Full name built');
+assertDeepEqual(users.map(getFullName), ['Ada Lovelace', 'Valen Tino'], 'Full name built');
 assertDeepEqual(filterUniqueWords("hola mundo mundo cruel"), ["cruel", "hola", "mundo"], 'Unique words extracted');
 assertEqual(getAverageGrade([{ name: "a", grades: [10, 5] }, { name: "b", grades: [5] }]), 6.666666666666667, 'Average grade calculated');
 
@@ -68,7 +70,7 @@ const counter = createCounter();
 assertEqual(counter(), 1, 'Counter returns 1');
 assertEqual(counter(), 2, 'Counter returns 2');
 let count = 0;
-repeatFunction(() => count++, 3)();
+repeatFunction(() => count++, 3)(); // IIEF
 assertEqual(count, 3, 'repeatFunction runs 3 times');
 
 // Task 4
