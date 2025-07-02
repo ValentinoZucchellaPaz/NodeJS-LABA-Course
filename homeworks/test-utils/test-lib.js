@@ -36,6 +36,8 @@ export function assertThrows(fn, message = "assertThrows") {
 
 export function test(description, fn) {
     try {
+        console.log('--------------------');
+        console.log(description + ": ");
         fn();
     } catch (err) {
         console.error(`❌ ${description}\n   Test threw an unexpected error: ${err}`);
