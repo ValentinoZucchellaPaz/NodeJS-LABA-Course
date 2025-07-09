@@ -65,6 +65,7 @@ export function getArrayIntersection(arr1, arr2) {
         }
     }
     return intersection
+    // return arr1.filter(item => set2.has(item)) // otra forma con similar rendimiento pero en 1 linea
 }
 // final complexity O(m+n)
 
