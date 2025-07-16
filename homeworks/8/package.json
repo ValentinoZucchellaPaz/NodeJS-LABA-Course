@@ -1,0 +1,12 @@
+{
+  "name": "homework8",
+  "version": "1.0.0",
+  "description": "This project simulates an online bookstore using Object-Oriented Programming (OOP) principles in JavaScript. It models books, users, shopping carts, and orders, applying encapsulation, inheritance, and data validation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}

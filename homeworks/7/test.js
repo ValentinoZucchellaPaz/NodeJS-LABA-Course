@@ -167,8 +167,8 @@ summary()
 
 // const promisedFunction = promisify(callbackStyleFunction)
 
-// promisedFunction(3).then(console.log).catch(console.error) // ➜ 6
-// promisedFunction(0).then(console.log).catch(console.error) // ➜ "Invalid value"
+// promisedFunction(3).then(console.log).catch(console.error) // -> 6
+// promisedFunction(0).then(console.log).catch(console.error) // -> "Invalid value"
 
 // callback-styled function
 function legacyAdd(a, b, callback) {
