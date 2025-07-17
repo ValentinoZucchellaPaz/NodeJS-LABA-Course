@@ -3,6 +3,7 @@ import { Book } from './Book.js'
 
 export class Order {
     #user;
+    // add an Order UUID?
     #booksOrdered;
     #total;
     #createdAt
